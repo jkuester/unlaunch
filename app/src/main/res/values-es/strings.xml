@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alignment_format_array">
+        <item>izquierda</item>
+        <item>centro</item>
+        <item>derecha</item>
+    </string-array>
+    <string-array name="clock_type_array">
+        <item>Ninguno</item>
+        <item>Digital</item>
+        <item>Analógico 12</item>
+        <item>Binario</item>
+        <item>Analógico 0</item>
+        <item>Analógico 1</item>
+        <item>Analógico 2</item>
+        <item>Analógico 3</item>
+        <item>Analógico 4</item>
+        <item>Analógico 6</item>
+        <item>Analógico 60</item>
+    </string-array>
+    <string-array name="quick_button_array">
+        <item>Mostrar</item>
+        <item>Ocultar</item>
+    </string-array>
+    <string-array name="search_bar_position_array">
+        <item>Superior</item>
+        <item>Inferior</item>
+    </string-array>
+    <string-array name="themes_array">
+        <item>Predeterminado del sistema</item>
+        <item>Medianoche</item>
+        <item>Júpiter</item>
+        <item>Verde azulado</item>
+        <item>Caramelo</item>
+        <item>Pastel</item>
+        <item>Mediodía</item>
+        <item>Vlad</item>
+        <item>Groovy</item>
+    </string-array>
+    <string-array name="time_format_array">
+        <item>Seguir los ajustes del sistema</item>
+        <item>24 horas</item>
+        <item>12 horas</item>
+    </string-array>
+
+    <string name="add_apps_fragment_search_apps">Buscar aplicaciones</string>
+    <string name="app_info">Información de la aplicación</string>
+    <string name="choose_alignment_dialog_title">Alineación</string>
+    <string name="choose_clock_type_dialog_title">Tipo de reloj</string>
+    <string name="choose_search_bar_position_dialog_title">Posición del campo de búsqueda</string>
+    <string name="choose_theme_dialog_title">Tema</string>
+    <string name="choose_time_format_dialog_title">Formato de la hora</string>
+    <string name="content_description_back">Atrás</string>
+    <string name="customise_apps_fragment_add">Añadir</string>
+    <string name="customise_apps_fragment_remove_all">Quitar todas</string>
+    <string name="customize_app_drawer_fragment_auto_theme_wallpaper_subtext_no_default_launcher">La aplicación debe ser el lanzador predeterminado</string>
+    <string name="customize_app_drawer_fragment_auto_theme_wallpaper_text">Establecer el fondo del tema como fondo de pantalla</string>
+    <string name="customize_app_drawer_fragment_open_keyboard">Abrir el teclado</string>
+    <string name="customize_app_drawer_fragment_open_keyboard_subtitle">Mostrar el teclado al mostrar el cajón de aplicaciones</string>
+    <string name="customize_app_drawer_fragment_search_all">Buscar todas las aplicaciones</string>
+    <string name="customize_app_drawer_fragment_search_all_subtitle">Las aplicaciones ocultas se pueden encontrar al buscar</string>
+    <string name="customize_app_drawer_fragment_search_bar_position">Posición</string>
+    <string name="customize_app_drawer_fragment_search_field_options">Opciones del campo de búsqueda</string>
+    <string name="customize_app_drawer_fragment_search_field_options_subtitle_status_hidden">El campo de búsqueda está oculto</string>
+    <string name="customize_app_drawer_fragment_search_field_options_subtitle_status_shown">posición %s, el teclado es %s</string>
+    <string name="customize_app_drawer_fragment_show_headings">Mostrar agrupaciones</string>
+    <string name="customize_app_drawer_fragment_show_headings_subtitle">Separa las aplicaciones en grupos alfabéticos</string>
+    <string name="customize_app_drawer_fragment_show_search_bar">Mostrar campo de búsqueda</string>
+    <string name="customize_app_drawer_fragment_visible_apps">Aplicaciones visibles</string>
+    <string name="hidden">oculta</string>
+    <string name="hide_app">Ocultar aplicación</string>
+    <string name="main_date_format">EEE, dd MMM</string>
+    <string name="main_fragment_options">Opciones</string>
+    <string name="menu_remove">Quitar</string>
+    <string name="menu_rename">Renombrar</string>
+    <string name="menu_reset">Restablecer</string>
+    <string name="open_app">Abrir aplicación</string>
+    <string name="options_fragment_change_theme">Tema</string>
+    <string name="options_fragment_choose_alignment">Alineación de la aplicación</string>
+    <string name="options_fragment_choose_clock_type">Tipo de reloj</string>
+    <string name="options_fragment_choose_time_format">Formato de la hora</string>
+    <string name="options_fragment_customise_apps">Aplicaciones de inicio</string>
+    <string name="options_fragment_customize_app_drawer">Cajón</string>
+    <string name="options_fragment_customize_quick_buttons">Botones rápidos</string>
+    <string name="options_fragment_device_settings">Ajustes</string>
+    <string name="options_fragment_toggle_status_bar">Conmutar la barra de estado</string>
+    <string name="remove_all_apps_dialog_message">"Esta acción no desinstalará tus aplicaciones."
+    "Es solo para confirmar si estas limpiando esta lista a proposito"</string>
+    <string name="remove_all_apps_dialog_title">Quitar todas las aplicaciones</string>
+    <string name="rename_app">Renombrar aplicación</string>
+    <string name="shown">mostrada</string>
+    <string name="uninstall">Desinstalar</string>
+</resources>
