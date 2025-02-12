@@ -12,10 +12,10 @@ import androidx.navigation.Navigation
 import com.jkuester.unlauncher.datasource.CorePreferencesRepository
 import com.jkuester.unlauncher.datasource.setKeepDeviceWallpaper
 import com.jkuester.unlauncher.dialog.AlignmentFormatDialog
+import com.jkuester.unlauncher.dialog.ClockTypeDialog
 import com.sduduzog.slimlauncher.R
 import com.sduduzog.slimlauncher.databinding.OptionsFragmentBinding
 import com.sduduzog.slimlauncher.ui.dialogs.ChangeThemeDialog
-import com.sduduzog.slimlauncher.ui.dialogs.ChooseClockTypeDialog
 import com.sduduzog.slimlauncher.ui.dialogs.ChooseTimeFormatDialog
 import com.sduduzog.slimlauncher.utils.BaseFragment
 import com.sduduzog.slimlauncher.utils.createTitleAndSubtitleText
@@ -60,8 +60,7 @@ class OptionsFragment : BaseFragment() {
             chooseTimeFormatDialog.showNow(childFragmentManager, "TIME_FORMAT_CHOOSER")
         }
         optionsFragment.optionsFragmentChooseClockType.setOnClickListener {
-            val chooseClockTypeDialog = ChooseClockTypeDialog.getInstance()
-            chooseClockTypeDialog.showNow(childFragmentManager, "CLOCK_TYPE_CHOOSER")
+            ClockTypeDialog().showNow(childFragmentManager, "CLOCK_TYPE_CHOOSER")
         }
         optionsFragment.optionsFragmentChooseAlignment.setOnClickListener {
             AlignmentFormatDialog().showNow(childFragmentManager, "ALIGNMENT_CHOOSER")

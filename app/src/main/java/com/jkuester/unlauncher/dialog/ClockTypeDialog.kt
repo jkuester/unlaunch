@@ -6,28 +6,28 @@ import android.content.DialogInterface
 import android.os.Bundle
 import androidx.fragment.app.DialogFragment
 import com.jkuester.unlauncher.datasource.CorePreferencesRepository
-import com.jkuester.unlauncher.datasource.setAlignmentFormat
-import com.jkuester.unlauncher.datastore.proto.AlignmentFormat
+import com.jkuester.unlauncher.datasource.setClockType
+import com.jkuester.unlauncher.datastore.proto.ClockType
 import com.sduduzog.slimlauncher.R
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class AlignmentFormatDialog : DialogFragment() {
+class ClockTypeDialog : DialogFragment() {
     @Inject
     lateinit var corePreferencesRepo: CorePreferencesRepository
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog = AlertDialog
         .Builder(context)
-        .setTitle(R.string.choose_alignment_dialog_title)
+        .setTitle(R.string.choose_clock_type_dialog_title)
         .setSingleChoiceItems(
-            R.array.alignment_format_array,
-            corePreferencesRepo.get().alignmentFormat.number,
+            R.array.clock_type_array,
+            corePreferencesRepo.get().clockType.number,
             this::onSelection
         )
         .create()
 
     private fun onSelection(dialogInterface: DialogInterface, i: Int) = dialogInterface
         .dismiss()
-        .also { corePreferencesRepo.updateAsync(setAlignmentFormat(AlignmentFormat.forNumber(i))) }
+        .also { corePreferencesRepo.updateAsync(setClockType(ClockType.forNumber(i))) }
 }

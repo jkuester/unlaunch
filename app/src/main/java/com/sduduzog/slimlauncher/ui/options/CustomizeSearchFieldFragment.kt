@@ -8,9 +8,9 @@ import com.jkuester.unlauncher.datasource.CorePreferencesRepository
 import com.jkuester.unlauncher.datasource.setActivateKeyboardInDrawer
 import com.jkuester.unlauncher.datasource.setSearchAllAppsInDrawer
 import com.jkuester.unlauncher.datasource.setShowSearchBar
+import com.jkuester.unlauncher.dialog.SearchBarPositionDialog
 import com.sduduzog.slimlauncher.R
 import com.sduduzog.slimlauncher.databinding.CustomizeAppDrawerFragmentSearchFieldOptionsBinding
-import com.sduduzog.slimlauncher.ui.dialogs.ChooseSearchBarPositionDialog
 import com.sduduzog.slimlauncher.utils.BaseFragment
 import com.sduduzog.slimlauncher.utils.createTitleAndSubtitleText
 import dagger.hilt.android.AndroidEntryPoint
@@ -70,8 +70,7 @@ class CustomizeSearchFieldFragment : BaseFragment() {
 
     private fun setupSearchBarPositionOption(options: CustomizeAppDrawerFragmentSearchFieldOptionsBinding) {
         options.customizeAppDrawerFragmentSearchFieldPosition.setOnClickListener {
-            val positionDialog = ChooseSearchBarPositionDialog.getSearchBarPositionChooser()
-            positionDialog.showNow(childFragmentManager, "POSITION_CHOOSER")
+            SearchBarPositionDialog().showNow(childFragmentManager, "POSITION_CHOOSER")
         }
         corePreferencesRepo.observe(viewLifecycleOwner) {
             val position = it.searchBarPosition.number
